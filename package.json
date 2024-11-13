@@ -1,0 +1,30 @@
+{
+    "name": "nuxt-styled-tailwind",
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.5.5",
+        "@primevue/themes": "^4.1.1",
+        "chart.js": "^4.4.5",
+        "nuxt": "^3.13.2",
+        "pinia": "^2.2.4",
+        "pinia-plugin-persistedstate": "^4.1.2",
+        "primeicons": "^7.0.0",
+        "primevue": "^4.1.1",
+        "tailwindcss-primeui": "^0.3.4",
+        "typescript": "^5.6.3",
+        "vue": "latest",
+        "vue-router": "latest"
+    },
+    "devDependencies": {
+        "@nuxtjs/tailwindcss": "^6.12.2",
+        "@primevue/nuxt-module": "^4.1.1"
+    }
+}
+
