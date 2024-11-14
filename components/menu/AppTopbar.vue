@@ -31,7 +31,7 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
             </ul>
         </div>
 
-        <!-- CONFIGURACION -->
+        <!-- MODO OCURO y TEMA -->
         <div class="layout-topbar-actions">
             <div class="layout-config-menu">
                 <button type="button" class="layout-topbar-action" @click="toggleDarkMode">
@@ -56,6 +56,7 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                 <i class="pi pi-ellipsis-v"></i>
             </button>
 
+            <!-- OTROS BOTONES -->
             <!-- <div class="layout-topbar-menu hidden lg:block">
                 <div class="layout-topbar-menu-content">
                     <button type="button" class="layout-topbar-action">

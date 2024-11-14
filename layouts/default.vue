@@ -53,6 +53,7 @@ function isOutsideClicked(event) {
 <template>
     <div class="layout-wrapper" :class="containerClass">
         <app-topbar></app-topbar>
+        <Image src="/img/home.png" width="100%" ></Image>
         <div class="layout-main-container">
             <div class="layout-main">
                 <slot />
