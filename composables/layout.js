@@ -3,7 +3,7 @@ import { useConfigurationStore } from '@/store/configuration';
 
 const layoutConfig = reactive({
     preset: 'Aura',
-    primary: 'blue',
+    primary: 'rose',
     surface: null,
     // darkTheme: true,
     menuMode: 'overlay'

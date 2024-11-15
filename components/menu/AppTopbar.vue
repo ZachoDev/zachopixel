@@ -21,7 +21,7 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
         </div>
 
         <!-- MENU ITEMS -->
-        <div class=" mx-auto ">
+        <div class="mx-auto">
             <ul class="layout-menu">
                 <template v-for="(item, i) in items" :key="item">
                     <div>

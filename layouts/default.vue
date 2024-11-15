@@ -52,14 +52,33 @@ function isOutsideClicked(event) {
 
 <template>
     <div class="layout-wrapper" :class="containerClass">
+
         <app-topbar></app-topbar>
-        <Image src="/img/home.png" width="100%" ></Image>
+
+        <div class="relative" >
+            
+            <img src="/img/home.png" width="100%"/>
+            
+            <div class="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-40%] flex flex-col items-center text-center !text-white">
+                <Image class="w-16 lg:w-52 hidden lg:inline-flex" src="/zacho_logo.png"></Image>
+                <div>
+                    <div class="mt-12 lg:mt-5 text-xs lg:text-xl">Welcome to</div>
+                    <div class="font-bold text-xl lg:text-7xl">ZachoPixel</div>
+                    <div class="text-xs lg:text-xl hidden lg:inline-flex">Original Texture Pack Artist</div>
+                </div>
+                <Button class="mt-1 lg:mt-5 !text-white !rounded-none !bg-rose-600" size="large">See Texture Packs</Button>
+            </div>
+
+            <img class="absolute bottom-0" src="/img/pixel-footer.png" width="100%"/>
+        </div>
+
         <div class="layout-main-container">
             <div class="layout-main">
                 <slot />
             </div>
             <app-footer></app-footer>
         </div>
+
         <div class="layout-mask animate-fadein"></div>
     </div>
     <Toast />

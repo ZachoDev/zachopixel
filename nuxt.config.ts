@@ -5,17 +5,17 @@ import { definePreset } from '@primevue/themes'
 const MyPreset = definePreset(Aura, {
     semantic: {
         primary: {
-            50: '{blue.50}',
-            100: '{blue.100}',
-            200: '{blue.200}',
-            300: '{blue.300}',
-            400: '{blue.400}',
-            500: '{blue.500}',
-            600: '{blue.600}',
-            700: '{blue.700}',
-            800: '{blue.800}',
-            900: '{blue.900}',
-            950: '{blue.950}'
+            50: '{rose.50}',
+            100: '{rose.100}',
+            200: '{rose.200}',
+            300: '{rose.300}',
+            400: '{rose.400}',
+            500: '{rose.500}',
+            600: '{rose.600}',
+            700: '{rose.700}',
+            800: '{rose.800}',
+            900: '{rose.900}',
+            950: '{rose.950}'
         }
     }
 });
