@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import { useLayout } from '/composables/layout';
 import AppConfigurator from '/components/menu/AppConfigurator.vue';
 import AppMenuItem from '/components/menu/AppMenuItem.vue';
@@ -21,17 +20,17 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
         </div>
 
         <!-- MENU ITEMS -->
-        <div class="mx-auto">
+        <div class="mx-auto hidden lg:inline-block">
             <ul class="layout-menu">
                 <template v-for="(item, i) in items" :key="item">
                     <div>
-                        <app-menu-item :item="item" :index="i"></app-menu-item>
+                        <AppMenuItem :item="item" :index="i"></AppMenuItem>
                     </div>
                 </template>
             </ul>
         </div>
 
-        <!-- MODO OCURO y TEMA -->
+        <!-- DARKMODE AND COLORS -->
         <div class="layout-topbar-actions">
             <div class="layout-config-menu">
                 <button type="button" class="layout-topbar-action" @click="toggleDarkMode">
@@ -49,6 +48,11 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                 </div>
             </div>
 
+            <!-- MENU MOBILE -->
+            <!-- <button class="layout-menu-button layout-topbar-action" @click="onMenuToggle">
+                <i class="pi pi-bars"></i>
+            </button> -->
+
             <button
                 class="layout-topbar-menu-button layout-topbar-action"
                 v-styleclass="{ selector: '@next', enterFromClass: 'hidden', enterActiveClass: 'animate-scalein', leaveToClass: 'hidden', leaveActiveClass: 'animate-fadeout', hideOnOutsideClick: true }"
@@ -57,9 +61,16 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
             </button>
 
             <!-- OTROS BOTONES -->
-            <!-- <div class="layout-topbar-menu hidden lg:block">
+            <div class="layout-topbar-menu hidden lg:block">
+
+                
                 <div class="layout-topbar-menu-content">
-                    <button type="button" class="layout-topbar-action">
+
+                    <div v-for="(item, i) in items" :key="item">
+                        <AppMenuItem :item="item" :index="i" :compact="true"></AppMenuItem>
+                    </div>
+
+                    <!-- <button type="button" class="layout-topbar-action">
                         <i class="pi pi-calendar"></i>
                         <span>Calendar</span>
                     </button>
@@ -70,9 +81,9 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                     <button type="button" class="layout-topbar-action">
                         <i class="pi pi-user"></i>
                         <span>Profile</span>
-                    </button>
+                    </button> -->
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </template>

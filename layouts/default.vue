@@ -69,7 +69,7 @@ function isOutsideClicked(event) {
                 <Button class="mt-1 lg:mt-5 !text-white !rounded-none !bg-rose-600" size="large">See Texture Packs</Button>
             </div>
 
-            <img class="absolute bottom-0" src="/img/pixel-footer.png" width="100%"/>
+            <img class="absolute bottom-0" :src="isDarkTheme ? '/img/pixel-bottom-dark.png' : '/img/pixel-bottom-white.png'" width="100%"/>
         </div>
 
         <div class="layout-main-container">
