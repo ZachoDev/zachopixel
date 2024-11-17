@@ -1,6 +1,9 @@
+@import './components/galleria';
+
 @import './variables/common';
 @import './variables/light';
 @import './variables/dark';
+
 /* @import './mixins'; */
 @import './preloading';
 @import './core';

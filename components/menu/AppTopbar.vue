@@ -61,7 +61,7 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
             </button>
 
             <!-- OTROS BOTONES -->
-            <div class="layout-topbar-menu hidden lg:block">
+            <div class="layout-topbar-menu hidden xs:block">
 
                 
                 <div class="layout-topbar-menu-content">

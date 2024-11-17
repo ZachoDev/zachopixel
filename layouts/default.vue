@@ -66,14 +66,16 @@ function isOutsideClicked(event) {
                     <div class="font-bold text-xl lg:text-7xl">ZachoPixel</div>
                     <div class="text-xs lg:text-xl hidden lg:inline-flex">Original Texture Pack Artist</div>
                 </div>
-                <Button class="mt-1 lg:mt-5 !text-white !rounded-none !bg-rose-600" size="large">See Texture Packs</Button>
+                <Button class="mt-1 lg:mt-5 !text-white !rounded-none" size="large">
+                    <router-link to="/texture-packs" >See Texture Packs</router-link>
+                </Button>
             </div>
 
             <img class="absolute bottom-0" :src="isDarkTheme ? '/img/pixel-bottom-dark.png' : '/img/pixel-bottom-white.png'" width="100%"/>
         </div>
 
-        <div class="layout-main-container">
-            <div class="layout-main">
+        <div class="container mx-auto mt-20">
+            <div>
                 <slot />
             </div>
             <app-footer></app-footer>

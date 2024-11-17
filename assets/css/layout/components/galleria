@@ -1,0 +1,14 @@
+.p-galleria-next-icon, 
+.p-galleria-prev-icon {
+    color: #3F3F46;
+}
+
+.app-dark .p-galleria-next-button, 
+.app-dark .p-galleria-prev-button {
+    background: none;
+}
+
+.app-dark .p-galleria-next-icon, 
+.app-dark .p-galleria-prev-icon {
+    color: #FFFFFF;
+}
