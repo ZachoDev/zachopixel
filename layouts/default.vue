@@ -2,7 +2,6 @@
 import { useLayout } from '/composables/layout';
 import { computed, ref, watch } from 'vue';
 import AppFooter from '/components/menu/AppFooter.vue'; 
-import AppSidebar from '/components/menu/AppSidebar.vue';
 import AppTopbar from '/components/menu/AppTopbar.vue';
 
 const { layoutConfig, layoutState, isSidebarActive, resetMenu, loadDarkMode, isDarkTheme } = useLayout();
@@ -75,7 +74,7 @@ function isOutsideClicked(event) {
             <img class="absolute bottom-0" :src="isDarkTheme ? '/img/pixel-bottom-dark.png' : '/img/pixel-bottom-white.png'" width="100%"/>
         </div>
 
-        <div class="container mx-auto mt-20">
+        <div class="container text-center mx-auto mt-10 px-[1rem] lg:px-auto 2xl:px-[20rem]">
             <div>
                 <slot />
             </div>

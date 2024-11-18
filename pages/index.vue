@@ -54,15 +54,15 @@ const responsiveOptions = ref([
             <div class="text-xl">Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</div>
         </div>
 
-        <div class="col-span-12 md:col-span-7 justify-items-center">
-            <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10">
-                <card class="px-16">
+        <div class="col-span-12 md:col-span-7 justify-items-center text-center">
+            <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+                <card>
                     <template #content>
                         <Galleria
                             :value="images" 
                             :responsiveOptions="responsiveOptions" 
                             :numVisible="5" 
-                            containerStyle="max-width: 400px" 
+                            containerStyle="max-width: 400px; margin: auto" 
                             :showItemNavigators="true" 
                             :showThumbnailNavigators="false"
                             :circular="true" 

@@ -2,12 +2,12 @@ export default {
     colorScheme: {
         light: {
             root: {
-                borderRadius: '0px'
+                'border-radius': '0px'
             },
         },
         dark: {
             root: {
-                borderRadius: '0px'
+                'border-radius': '0px'
             },
         }
     }
