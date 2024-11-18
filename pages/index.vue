@@ -58,10 +58,11 @@ const responsiveOptions = ref([
             <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10">
                 <card class="px-16">
                     <template #content>
-                        <Galleria 
+                        <Galleria
                             :value="images" 
                             :responsiveOptions="responsiveOptions" 
-                            :numVisible="5" containerStyle="max-width: 400px" 
+                            :numVisible="5" 
+                            containerStyle="max-width: 400px" 
                             :showItemNavigators="true" 
                             :showThumbnailNavigators="false"
                             :circular="true" 
@@ -83,9 +84,5 @@ const responsiveOptions = ref([
     </div>
 </template>
 
-<style scoped>
-.p-galleria{
-    border-width: 0;
-}
+<style>
 </style>
-

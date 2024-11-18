@@ -14,7 +14,7 @@ const MyPreset = definePreset(Aura, {
             400: '{rose.600}',
             500: '{rose.500}',
             600: '{rose.700}',
-            700: '{rose.700}',
+            700: '{rose.700}', 
             800: '{rose.700}',
             900: '{rose.700}',
             950: '{rose.700}'
@@ -56,7 +56,7 @@ const MyPreset = definePreset(Aura, {
                     950: '{zinc.950}'
                 }
             }
-        },
+        },  
     },
 
     components: customComponents 
