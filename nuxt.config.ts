@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import Aura from "@primevue/themes/aura";
 import { definePreset } from '@primevue/themes'
+import customComponents from "./assets/components/customComponents";
 
 const MyPreset = definePreset(Aura, {
-
     semantic: {
 
         primary: {
@@ -22,6 +22,7 @@ const MyPreset = definePreset(Aura, {
 
         colorScheme: {
             light: {
+                borderRadius: '0px',
                 surface: {
                     0: '#ffffff',
                     50: '{zinc.50}',
@@ -37,8 +38,9 @@ const MyPreset = definePreset(Aura, {
                     950: '{zinc.950}'
                 }
             },
-
+            
             dark: {
+                borderRadius: '0px',
                 surface: {
                     0: '#ffffff',
                     50: '{zinc.50}',
@@ -54,9 +56,11 @@ const MyPreset = definePreset(Aura, {
                     950: '{zinc.950}'
                 }
             }
-        }
-
+        },
     },
+
+    components: customComponents 
+
 });
 
 export default defineNuxtConfig({

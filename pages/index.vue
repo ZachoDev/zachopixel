@@ -8,12 +8,6 @@ const images = [
         title: 'Title 0'
     },
     {
-        itemImageSrc: '/img/textures/apple.png',
-        thumbnailImageSrc: '/img/textures/apple.png',
-        alt: 'img1',
-        title: 'Title 1'
-    },
-    {
         itemImageSrc: '/img/textures/bread.png',
         thumbnailImageSrc: '/img/textures/bread.png',
         alt: 'img1',
@@ -24,6 +18,12 @@ const images = [
         thumbnailImageSrc: '/img/textures/ender_eye.png',
         alt: 'img1',
         title: 'Title 3'
+    },
+    {
+        itemImageSrc: '/img/textures/apple.png',
+        thumbnailImageSrc: '/img/textures/apple.png',
+        alt: 'img1',
+        title: 'Title 1'
     },
     {
         itemImageSrc: '/img/textures/iron_sword.png',
@@ -55,7 +55,7 @@ const responsiveOptions = ref([
         </div>
 
         <div class="col-span-12 md:col-span-7 justify-items-center">
-            <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 rounded-xl">
+            <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10">
                 <card class="px-16">
                     <template #content>
                         <Galleria 
