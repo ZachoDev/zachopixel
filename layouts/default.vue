@@ -55,12 +55,10 @@ function isOutsideClicked(event) {
 
         <app-topbar></app-topbar>
 
-        <div class="relative" >
-            
-            <img src="/img/home.png" width="100%"/>
-            
+        <div class="bg-[url('public/img/home.png')] h-[500px] md:h-[760px] bg-cover bg-center relative" >
+            <img class="absolute bottom-0" :src="isDarkTheme ? '/img/pixel-bottom-dark.png' : '/img/pixel-bottom-white.png'" width="100%"/>
             <div class="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-40%] flex flex-col items-center text-center !text-white">
-                <Image class="w-16 lg:w-52 hidden lg:inline-flex" src="/zacho_logo.png"></Image>
+                <Image class="w-16 lg:w-52 hidden lg:inline-flex" src="/zacho_logo.png"/>
                 <div>
                     <div class="mt-12 lg:mt-5 text-xs lg:text-xl">Welcome to</div>
                     <div class="font-bold text-xl lg:text-7xl">ZachoPixel</div>
@@ -70,8 +68,6 @@ function isOutsideClicked(event) {
                     <router-link to="/texture-packs" >See Texture Packs</router-link>
                 </Button>
             </div>
-
-            <img class="absolute bottom-0" :src="isDarkTheme ? '/img/pixel-bottom-dark.png' : '/img/pixel-bottom-white.png'" width="100%"/>
         </div>
 
         <div class="container text-center mx-auto mt-10 px-[1rem] lg:px-auto 2xl:px-[20rem]">
