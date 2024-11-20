@@ -1,5 +1,6 @@
 @import "primeicons/primeicons.css";
 @import "/assets/css/styles.css";
+@import "/assets/css/layout/typography.css";
 
 @tailwind base;
 @tailwind components;
