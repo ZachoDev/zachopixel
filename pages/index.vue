@@ -36,11 +36,11 @@ const images = [
 const responsiveOptions = ref([
     {
         breakpoint: '1300px',
-        numVisible: 4
+        numVisible: 5
     },
     {
         breakpoint: '575px',
-        numVisible: 2
+        numVisible: 5
     }
 ]);
 
@@ -81,7 +81,10 @@ const responsiveOptions = ref([
             </div>
         </div>
 
+        
+        
     </div>
+    <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="769" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/wwi-texture-pack-lebel-rifle-1952c4e0e9a2445f80c492d637a553fb?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> WWI Texture pack, Lebel Rifle </a> by <a href="https://sketchfab.com/zachopixel?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> zachopixel </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 </template>
 
 <style>
