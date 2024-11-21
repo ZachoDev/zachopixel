@@ -1,5 +1,5 @@
 .layout-topbar {
-    position: relative;
+    position: fixed;
     height: 4rem;
     z-index: 997;
     left: 0;

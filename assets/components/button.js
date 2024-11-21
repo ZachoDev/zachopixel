@@ -2,12 +2,18 @@ export default {
     colorScheme: {
         light: {
             root: {
-                borderRadius: '0px'
+                'border.radius': '0px',
+                'text.primary.color': '#FFFFFF',
+                'text.secondary.color': '#FFFFFF',
+                'text.color': '#FFFFFF'
             },
         },
         dark: {
             root: {
-                borderRadius: '0px'
+                'border.radius': '0px',
+                'text.primary.color': '#FFFFFF',
+                'text.secondary.color': '#FFFFFF',
+                'text.color': '#FFFFFF'
             },
         }
     }
