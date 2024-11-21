@@ -48,7 +48,7 @@ onMounted(() => {
             </div>
 
             <div class="col-span-12 md:col-span-7 px-20 ">
-                <div class="bg-gradient-to-t from-primary-500 to-30% p-1 ">
+                <LightBorder>
                     <card>
                         <template #content>
                             <Galleria
@@ -71,7 +71,7 @@ onMounted(() => {
                             </Galleria>
                         </template>
                     </card>
-                </div>
+                </LightBorder>
             </div>
 
         </div>
@@ -79,7 +79,7 @@ onMounted(() => {
         <hr class="mt-16 mb-16">
 
         <!-- MY MODELS -->
-        <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+        <LightBorder>
 
             <div class="text-center">
                 <h1>Mira algunos de mis modelos 3D</h1>
@@ -87,7 +87,7 @@ onMounted(() => {
 
             <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="670" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
             
-        </div>
+        </LightBorder>
 
         <hr class="mt-16 mb-16">
 
@@ -99,11 +99,11 @@ onMounted(() => {
             </div>
 
             <div class="col-span-12 lg:col-span-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yqnjU0LAXMI?si=f2azRoCRXwkOBrmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="mb-5 md:mb-0 w-auto h-auto md:w-[560px] md:h-[310px]" src="https://www.youtube.com/embed/yqnjU0LAXMI?si=f2azRoCRXwkOBrmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             <div class="col-span-12 lg:col-span-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cIl0uN8ZeC8?si=PsD0soGuKp_w5nIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="mb-5 md:mb-0 w-auto h-auto md:w-[560px] md:h-[310px]" src="https://www.youtube.com/embed/cIl0uN8ZeC8?si=PsD0soGuKp_w5nIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
         </div>

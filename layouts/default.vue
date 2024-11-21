@@ -57,7 +57,7 @@ function isOutsideClicked(event) {
 
         <app-topbar></app-topbar>
 
-        <slot />
+        <slot></slot>
         
         <app-footer></app-footer>
 
