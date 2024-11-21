@@ -92,7 +92,7 @@ onMounted(() => {
         <hr class="mt-16 mb-16">
 
         <!-- VIDEOS -->
-        <div class="grid grid-cols-12 items-center justify-items-center" v-show="isLoaded">
+        <div class="grid grid-cols-12 justify-items-center" v-show="isLoaded">
 
             <div class="text-center col-span-12">
                 <h1>Puedes mirar algunos de mis videos en Youtube</h1>
