@@ -31,7 +31,7 @@ onMounted(() => {
                 <div class="font-bold text-4xl lg:text-7xl">ZachoPixel</div>
                 <div class="text-xl inline-flex">Original Texture Pack Artist</div>
             </div>
-            <Button class="mt-1 lg:mt-5 !text-white" size="large">
+            <Button class="mt-1 lg:mt-5" size="large">
                 <router-link to="/texture-packs">See Texture Packs</router-link>
             </Button>
         </template>
@@ -42,11 +42,9 @@ onMounted(() => {
         <!-- MY TEXTURES -->
         <div class="grid grid-cols-12 items-center " v-show="isLoaded"> 
 
-            <div class="col-span-12 md:col-span-5 md:text-left">
-                <h1>AA</h1>
-                <p>AA</p>
-                <div class="text-5xl mb-10">Mis diseños</div>
-                <div class="text-xl">Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</div>
+            <div class="col-span-12 md:col-span-5 text-center">
+                <h1>Mis diseños</h1>
+                <p class="text-xl">Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
             </div>
 
             <div class="col-span-12 md:col-span-7 justify-items-center text-center">
@@ -78,17 +76,39 @@ onMounted(() => {
 
         </div>
 
+        <hr class="mt-16 mb-16">
+
         <!-- MY MODELS -->
-        <div v-show="isLoaded" class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="769" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/wwi-texture-pack-lebel-rifle-1952c4e0e9a2445f80c492d637a553fb?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> WWI Texture pack, Lebel Rifle </a> by <a href="https://sketchfab.com/zachopixel?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> zachopixel </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+        <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+            <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="769" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
+        </div>
     
+        <hr class="mt-16 mb-16">
+
         <!-- KOFI -->
         <div class="grid grid-cols-12 items-center mb-10"> 
+
             <div class="col-span-12 md:col-span-6">
                 <div>
-                    <h1>Apoya mi trabajo</h1>
-                    <p>Si te gusta mi trabajo, puedes apoyarme en Patreon</p>
+                    <h2>Apoya mi trabajo mmgvo!</h2>
+                    <p>Si te gusta mi trabajo, puedes apoyarme en Kofi</p>
                 </div>
+                <Button class="mt-5 mb-5">Me brindas un café?</Button>
             </div>
+
+            <div class="col-span-12 md:col-span-6">
+                <Card>
+                    <template #title>
+                        <h2>Top Kofi's supporter</h2>
+                    </template>
+                    <template #content>
+                        <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                        <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                        <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                    </template>
+                </Card>
+            </div>
+
         </div>
 
     </app-body>

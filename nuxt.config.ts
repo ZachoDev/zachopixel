@@ -67,6 +67,11 @@ export default defineNuxtConfig({
 
     compatibilityDate: "2024-10-27",
     devtools: { enabled: true },
+
+    css: [
+        '~/assets/css/main.css',
+    ],
+      
     modules: [
         "@nuxtjs/tailwindcss",
         "@primevue/nuxt-module",
@@ -88,5 +93,4 @@ export default defineNuxtConfig({
         }
     },
     
-
 });
