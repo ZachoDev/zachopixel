@@ -1,37 +1,5 @@
 <script setup>
-
-const images = [
-    {
-        itemImageSrc: '/img/textures/golden_apple.png',
-        thumbnailImageSrc: '/img/textures/golden_apple.png',
-        alt: 'img1',
-        title: 'Title 0'
-    },
-    {
-        itemImageSrc: '/img/textures/bread.png',
-        thumbnailImageSrc: '/img/textures/bread.png',
-        alt: 'img1',
-        title: 'Title 2'
-    },
-    {
-        itemImageSrc: '/img/textures/ender_eye.png',
-        thumbnailImageSrc: '/img/textures/ender_eye.png',
-        alt: 'img1',
-        title: 'Title 3'
-    },
-    {
-        itemImageSrc: '/img/textures/apple.png',
-        thumbnailImageSrc: '/img/textures/apple.png',
-        alt: 'img1',
-        title: 'Title 1'
-    },
-    {
-        itemImageSrc: '/img/textures/iron_sword.png',
-        thumbnailImageSrc: '/img/textures/iron_sword.png',
-        alt: 'img1',
-        title: 'Title 4'
-    },
-]
+import textureImages from '/composables/textureGalleria';
 
 const responsiveOptions = ref([
     {
@@ -43,6 +11,12 @@ const responsiveOptions = ref([
         numVisible: 5
     }
 ]);
+
+const isLoaded = ref(false)
+
+onMounted(() => {
+    isLoaded.value = true
+})
 
 </script>
 
@@ -66,9 +40,11 @@ const responsiveOptions = ref([
     <app-body>
 
         <!-- MY TEXTURES -->
-        <div class="grid grid-cols-12 items-center "> 
+        <div class="grid grid-cols-12 items-center " v-show="isLoaded"> 
 
             <div class="col-span-12 md:col-span-5 md:text-left">
+                <h1>AA</h1>
+                <p>AA</p>
                 <div class="text-5xl mb-10">Mis diseños</div>
                 <div class="text-xl">Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</div>
             </div>
@@ -78,7 +54,7 @@ const responsiveOptions = ref([
                     <card>
                         <template #content>
                             <Galleria
-                                :value="images" 
+                                :value="textureImages" 
                                 :responsiveOptions="responsiveOptions" 
                                 :numVisible="5" 
                                 containerStyle="max-width: 400px; margin: auto" 
@@ -103,7 +79,7 @@ const responsiveOptions = ref([
         </div>
 
         <!-- MY MODELS -->
-        <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="769" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/wwi-texture-pack-lebel-rifle-1952c4e0e9a2445f80c492d637a553fb?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> WWI Texture pack, Lebel Rifle </a> by <a href="https://sketchfab.com/zachopixel?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> zachopixel </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+        <div v-show="isLoaded" class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="769" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/wwi-texture-pack-lebel-rifle-1952c4e0e9a2445f80c492d637a553fb?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> WWI Texture pack, Lebel Rifle </a> by <a href="https://sketchfab.com/zachopixel?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> zachopixel </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1952c4e0e9a2445f80c492d637a553fb" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
     
         <!-- KOFI -->
         <div class="grid grid-cols-12 items-center mb-10"> 
