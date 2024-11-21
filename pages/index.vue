@@ -27,9 +27,9 @@ onMounted(() => {
         <template #content>
             <Image class="w-16 lg:w-52 inline-flex" src="/zacho_logo.png"/>
             <div>
-                <div class="mt-5 text-xl">Welcome to</div>
-                <div class="font-bold text-4xl lg:text-7xl">ZachoPixel</div>
-                <div class="text-xl inline-flex">Original Texture Pack Artist</div>
+                <p class="text-xl">Welcome to</p>
+                <h1 class="text-white font-bold text-4xl lg:text-7xl">ZachoPixel</h1>
+                <p class="text-xl inline-flex">Original Texture Pack Artist</p>
             </div>
             <Button class="mt-1 lg:mt-5" size="large">
                 <router-link to="/texture-packs">See Texture Packs</router-link>
