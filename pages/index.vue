@@ -31,7 +31,7 @@ onMounted(() => {
                 <h1 class="text-white font-bold text-4xl lg:text-7xl">ZachoPixel</h1>
                 <p class="text-xl inline-flex">Original Texture Pack Artist</p>
             </div>
-            <Button class="mt-1 lg:mt-5" size="large">
+            <Button class="mt-1 lg:mt-5 !text-white" size="large">
                 <router-link to="/texture-packs">See Texture Packs</router-link>
             </Button>
         </template>
@@ -80,7 +80,7 @@ onMounted(() => {
 
         <!-- MY MODELS -->
         <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
-            <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="769" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
+            <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="670" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
         </div>
     
         <hr class="mt-16 mb-16">
@@ -93,7 +93,7 @@ onMounted(() => {
                     <h2>Apoya mi trabajo mmgvo!</h2>
                     <p>Si te gusta mi trabajo, puedes apoyarme en Kofi</p>
                 </div>
-                <Button class="mt-5 mb-5">Me brindas un café?</Button>
+                <Button class="mt-5 mb-5 !text-white">Me brindas un café?</Button>
             </div>
 
             <div class="col-span-12 md:col-span-6">
