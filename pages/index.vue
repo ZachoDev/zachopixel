@@ -38,24 +38,24 @@ onMounted(() => {
     </HeaderImage>
 
     <app-body>
-
+            
         <!-- MY TEXTURES -->
-        <div class="grid grid-cols-12 items-center " v-show="isLoaded"> 
+        <div class="grid grid-cols-12 items-center justify-strech" v-show="isLoaded"> 
 
-            <div class="col-span-12 md:col-span-5 text-center">
+            <div class="col-span-12 md:col-span-5 text-center md:text-left mb-5">
                 <h1>Mis diseños</h1>
                 <p class="text-xl">Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
             </div>
 
-            <div class="col-span-12 md:col-span-7 justify-items-center text-center">
-                <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+            <div class="col-span-12 md:col-span-7 px-20 ">
+                <div class="bg-gradient-to-t from-primary-500 to-30% p-1 ">
                     <card>
                         <template #content>
                             <Galleria
                                 :value="textureImages" 
                                 :responsiveOptions="responsiveOptions" 
                                 :numVisible="5" 
-                                containerStyle="max-width: 400px; margin: auto" 
+                                containerStyle="max-width: 300px; margin: auto" 
                                 :showItemNavigators="true" 
                                 :showThumbnailNavigators="false"
                                 :circular="true" 
@@ -80,7 +80,32 @@ onMounted(() => {
 
         <!-- MY MODELS -->
         <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+
+            <div class="text-center">
+                <h1>Mira algunos de mis modelos 3D</h1>
+            </div>
+
             <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="670" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
+            
+        </div>
+
+        <hr class="mt-16 mb-16">
+
+        <!-- VIDEOS -->
+        <div class="grid grid-cols-12 items-center justify-items-center" v-show="isLoaded">
+
+            <div class="text-center col-span-12">
+                <h1>Puedes mirar algunos de mis videos en Youtube</h1>
+            </div>
+
+            <div class="col-span-12 lg:col-span-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yqnjU0LAXMI?si=f2azRoCRXwkOBrmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-span-12 lg:col-span-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cIl0uN8ZeC8?si=PsD0soGuKp_w5nIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
         </div>
     
         <hr class="mt-16 mb-16">
@@ -97,16 +122,18 @@ onMounted(() => {
             </div>
 
             <div class="col-span-12 md:col-span-6">
-                <Card>
-                    <template #title>
-                        <h2>Top Kofi's supporter</h2>
-                    </template>
-                    <template #content>
-                        <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
-                        <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
-                        <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
-                    </template>
-                </Card>
+                <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+                    <Card>
+                        <template #title>
+                            <h2>Top Kofi's supporter</h2>
+                        </template>
+                        <template #content>
+                            <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                            <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                            <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                        </template>
+                    </Card>
+                </div>
             </div>
 
         </div>
