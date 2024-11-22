@@ -12,12 +12,12 @@ const MyPreset = definePreset(Aura, {
             200: '{rose.500}',
             300: '{rose.500}',
             400: '{rose.600}',
-            500: '{rose.500}',
+            500: '{rose.600}',
             600: '{rose.700}',
             700: '{rose.700}', 
-            800: '{rose.700}',
-            900: '{rose.700}',
-            950: '{rose.700}'
+            800: '{rose.800}',
+            900: '{rose.900}',
+            950: '{rose.950}'
         },
 
         colorScheme: {

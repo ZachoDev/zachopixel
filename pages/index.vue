@@ -24,17 +24,14 @@ onMounted(() => {
 
     <!-- HEADER IMAGE -->
     <HeaderImage :image="'/img/home.png'">
-        <template #content>
-            <Image class="w-16 lg:w-52 inline-flex" src="/zacho_logo.png"/>
-            <div>
-                <p class="text-xl">Welcome to</p>
-                <h1 class="text-white font-bold text-4xl lg:text-7xl">ZachoPixel</h1>
-                <p class="text-xl inline-flex">Original Texture Pack Artist</p>
-            </div>
-            <Button class="mt-1 lg:mt-5 !text-white" size="large">
-                <router-link to="/texture-packs">See Texture Packs</router-link>
-            </Button>
-        </template>
+        <Image class="w-16 lg:w-52 inline-flex mb-8" src="/zacho_logo.png"/>
+        <div>
+            <h1 class="text-white font-bold text-6xl">ZachoPixel</h1>
+            <h5 class="text-white">Original Texture Pack Artist</h5>
+        </div>
+        <Button class="mt-1 lg:mt-5 !text-white" size="large">
+            <router-link to="/texture-packs">See Texture Packs</router-link>
+        </Button>
     </HeaderImage>
 
     <app-body>
@@ -43,8 +40,8 @@ onMounted(() => {
         <div class="grid grid-cols-12 items-center justify-strech" v-show="isLoaded"> 
 
             <div class="col-span-12 md:col-span-5 text-center md:text-left mb-5">
-                <h1>Mis diseños</h1>
-                <p class="text-xl">Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
+                <h2>Mis diseños</h2>
+                <p>Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
             </div>
 
             <div class="col-span-12 md:col-span-7 px-20 ">
@@ -82,7 +79,7 @@ onMounted(() => {
         <LightBorder>
 
             <div class="text-center">
-                <h1>Mira algunos de mis modelos 3D</h1>
+                <h2>Mira algunos de mis modelos 3D</h2>
             </div>
 
             <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="670" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
@@ -95,7 +92,7 @@ onMounted(() => {
         <div class="grid grid-cols-12 justify-items-center" v-show="isLoaded">
 
             <div class="text-center col-span-12">
-                <h1>Puedes mirar algunos de mis videos en Youtube</h1>
+                <h2>Puedes mirar algunos de mis videos en Youtube</h2>
             </div>
 
             <div class="col-span-12 lg:col-span-6">
