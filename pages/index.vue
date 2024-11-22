@@ -44,7 +44,7 @@ onMounted(() => {
                 <p>Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
             </div>
 
-            <div class="col-span-12 md:col-span-7 px-20 ">
+            <div class="col-span-12 md:col-span-7 px-0 md:px-20 ">
                 <LightBorder>
                     <card>
                         <template #content>
@@ -78,11 +78,11 @@ onMounted(() => {
         <!-- MY MODELS -->
         <LightBorder>
 
-            <div class="text-center">
+            <div class="text-center mb-5 md:mb-0">
                 <h2>Mira algunos de mis modelos 3D</h2>
             </div>
 
-            <div class="sketchfab-embed-wrapper"> <iframe title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="670" src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
+            <div class="sketchfab-embed-wrapper"> <iframe class="w-full h-[480px] md:h-[670px]" title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
             
         </LightBorder>
 
