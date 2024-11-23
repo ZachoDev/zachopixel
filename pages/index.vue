@@ -78,7 +78,7 @@ onMounted(() => {
         <!-- SCREENSHOTS -->
         <div class="grid grid-cols-12 items-center justify-strech" v-show="isLoaded"> 
 
-            <div class="col-span-12 md:col-span-8 px-0 md:px-20 ">
+            <div class="col-span-12 md:col-span-8 px-0 md:px-20 mb-5">
                     <BorderDetail type="pixel">
                         <card>
                             <template #content>
@@ -103,7 +103,7 @@ onMounted(() => {
                     </BorderDetail>
             </div>
 
-            <div class="col-span-12 md:col-span-4 text-center md:text-left mb-5">
+            <div class="col-span-12 md:col-span-4 text-center md:text-left">
                 <h2>Mis texture packs</h2>
                 <p>Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
             </div>
