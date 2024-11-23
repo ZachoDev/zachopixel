@@ -45,46 +45,46 @@ onMounted(() => {
             </div>
 
             <div class="col-span-12 md:col-span-7 px-0 md:px-20 ">
-                <LightBorder>
-                    <card>
-                        <template #content>
-                            <Galleria
-                                :value="textureImages" 
-                                :responsiveOptions="responsiveOptions" 
-                                :numVisible="5" 
-                                containerStyle="max-width: 300px; margin: auto" 
-                                :showItemNavigators="true" 
-                                :showThumbnailNavigators="false"
-                                :circular="true" 
-                                :autoPlay="true" 
-                                :transitionInterval="2000"
-                            >
-                                <template #item="slotProps">
-                                    <img class="mt-10" :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" width="70%" />
-                                </template>
-                                <template #thumbnail="slotProps">
-                                    <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" />
-                                </template>
-                            </Galleria>
-                        </template>
-                    </card>
-                </LightBorder>
+                    <BorderDetail type="pixel">
+                        <card>
+                            <template #content>
+                                <Galleria
+                                    :value="textureImages" 
+                                    :responsiveOptions="responsiveOptions" 
+                                    :numVisible="5" 
+                                    containerStyle="max-width: 300px; margin: auto" 
+                                    :showItemNavigators="true" 
+                                    :showThumbnailNavigators="false"
+                                    :circular="true" 
+                                    :autoPlay="true" 
+                                    :transitionInterval="2000"
+                                >
+                                    <template #item="slotProps">
+                                        <img class="mt-10" :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" width="70%" />
+                                    </template>
+                                    <template #thumbnail="slotProps">
+                                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" />
+                                    </template>
+                                </Galleria>
+                            </template>
+                        </card>
+                    </BorderDetail>
             </div>
-
         </div>
+
 
         <hr class="mt-16 mb-16">
 
         <!-- MY MODELS -->
-        <LightBorder>
-
+        <BorderDetail type="light">
+            <!-- <span class="text-primary">∎</span> -->
             <div class="text-center mb-5 md:mb-0">
-                <h2>Mira algunos de mis modelos 3D</h2>
+                <h2> Mira algunos de mis modelos 3D</h2>
             </div>
 
             <div class="sketchfab-embed-wrapper"> <iframe class="w-full h-[480px] md:h-[670px]" title="WWI Texture pack, Lebel Rifle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1952c4e0e9a2445f80c492d637a553fb/embed?autostart=1&camera=0&preload=1&ui_theme=dark"> </iframe> </div>
             
-        </LightBorder>
+        </BorderDetail>
 
         <hr class="mt-16 mb-16">
 
@@ -119,7 +119,7 @@ onMounted(() => {
             </div>
 
             <div class="col-span-12 md:col-span-6">
-                <div class="bg-gradient-to-t from-primary-500 to-30% p-1 mb-10 mx-10">
+                <BorderDetail type="pixel">
                     <Card>
                         <template #title>
                             <h2>Top Kofi's supporter</h2>
@@ -130,7 +130,7 @@ onMounted(() => {
                             <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
                         </template>
                     </Card>
-                </div>
+                </BorderDetail>
             </div>
 
         </div>

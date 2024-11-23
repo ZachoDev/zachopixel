@@ -12,6 +12,8 @@ const props = defineProps({
 </script>
 
 <template>
+        <!-- <div :style="{ backgroundImage: `url(${props.image})` }" class="h-[500px] md:h-[760px] bg-no-repeat bg-cover bg-center relative bg-fixed">
+            <div class="opacity-40 absolute inset-0 bg-gradient-to-t from-black from-5% to-60% via-transparent to-transparent"></div> -->
     <div :style="{ backgroundImage: `url(${props.image})` }" class="h-[500px] md:h-[760px] bg-no-repeat bg-cover bg-center relative ">
         <div class="opacity-40 absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         <div class="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-40%] flex flex-col items-center text-center !text-white">

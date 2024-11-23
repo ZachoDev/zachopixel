@@ -6,7 +6,7 @@ import MenuItems from '/composables/menuItems.js';
 
 const items = MenuItems;
 
-const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
+const { toggleDarkMode, isDarkTheme } = useLayout();
 </script>
 
 <template>
@@ -48,11 +48,6 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                 </div>
             </div>
 
-            <!-- MENU MOBILE -->
-            <!-- <button class="layout-menu-button layout-topbar-action" @click="onMenuToggle">
-                <i class="pi pi-bars"></i>
-            </button> -->
-
             <button
                 class="layout-topbar-menu-button layout-topbar-action"
                 v-styleclass="{ selector: '@next', enterFromClass: 'hidden', enterActiveClass: 'animate-scalein', leaveToClass: 'hidden', leaveActiveClass: 'animate-fadeout', hideOnOutsideClick: true }"
@@ -60,8 +55,8 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                 <i class="pi pi-ellipsis-v"></i>
             </button>
 
-            <!-- OTROS BOTONES -->
-            <div class="layout-topbar-menu inline-block lg:hidden">
+            <!-- MENU MOBILE -->
+            <div class="layout-topbar-menu hidden lg:hidden">
                 
                 <div class="layout-topbar-menu-content">
 
@@ -72,17 +67,10 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                     <!-- <button type="button" class="layout-topbar-action">
                         <i class="pi pi-calendar"></i>
                         <span>Calendar</span>
-                    </button>
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-inbox"></i>
-                        <span>Messages</span>
-                    </button>
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-user"></i>
-                        <span>Profile</span>
                     </button> -->
                 </div>
             </div>
+
         </div>
     </div>
 </template>
