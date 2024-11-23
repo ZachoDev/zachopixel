@@ -1,5 +1,6 @@
 <script setup>
 import textureImages from '/composables/textureGalleria';
+import screenshotImages from '/composables/screenshotGalleria';
 
 const responsiveOptions = ref([
     {
@@ -72,6 +73,42 @@ onMounted(() => {
             </div>
         </div>
 
+        <hr class="mt-16 mb-16">
+
+        <!-- SCREENSHOTS -->
+        <div class="grid grid-cols-12 items-center justify-strech" v-show="isLoaded"> 
+
+            <div class="col-span-12 md:col-span-8 px-0 md:px-20 ">
+                    <BorderDetail type="pixel">
+                        <card>
+                            <template #content>
+                                <Galleria
+                                    :value="screenshotImages" 
+                                    :showThumbnails="false"
+                                    :responsiveOptions="responsiveOptions" 
+                                    :showItemNavigators="false" 
+                                    :showThumbnailNavigators="false"
+                                    :circular="true" 
+                                    :autoPlay="true" 
+                                    :transitionInterval="4000"
+                                    :showIndicators="true"
+                                    :changeItemOnIndicatorHover="true"
+                                >
+                                    <template #item="slotProps">
+                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" class="h-[340px]" />
+                                    </template>
+                                </Galleria>
+                            </template>
+                        </card>
+                    </BorderDetail>
+            </div>
+
+            <div class="col-span-12 md:col-span-4 text-center md:text-left mb-5">
+                <h2>Mis texture packs</h2>
+                <p>Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. Los colores elejidos fueron seleccionados para ofrecer un ambiente oscuro y serio, alejandose de la alta saturacion de muchos videojuegos actuales</p>
+            </div>
+
+        </div>
 
         <hr class="mt-16 mb-16">
 

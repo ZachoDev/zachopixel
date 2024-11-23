@@ -30,24 +30,23 @@ const props = defineProps({
     }
 });
 
-// const compact = ref(props.compact);
-// const isActiveMenu = ref(false);
-// const itemKey = ref(null);
+const isActiveMenu = ref(false);
+const itemKey = ref(null);
 
-// onBeforeMount(() => {
-//     itemKey.value = props.parentItemKey ? props.parentItemKey + '-' + props.index : String(props.index);
+onBeforeMount(() => {
+    itemKey.value = props.parentItemKey ? props.parentItemKey + '-' + props.index : String(props.index);
 
-//     const activeItem = layoutState.activeMenuItem;
+    const activeItem = layoutState.activeMenuItem;
 
-//     isActiveMenu.value = activeItem === itemKey.value || activeItem ? activeItem.startsWith(itemKey.value + '-') : false;
-// });
+    isActiveMenu.value = activeItem === itemKey.value || activeItem ? activeItem.startsWith(itemKey.value + '-') : false;
+});
 
-// watch(
-//     () => layoutState.activeMenuItem,
-//     (newVal) => {
-//         isActiveMenu.value = newVal === itemKey.value || newVal.startsWith(itemKey.value + '-');
-//     }
-// );
+watch(
+    () => layoutState.activeMenuItem,
+    (newVal) => {
+        isActiveMenu.value = newVal === itemKey.value || newVal.startsWith(itemKey.value + '-');
+    }
+);
 
 function itemClick(event, item) {
     if (item.disabled) {
