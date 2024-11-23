@@ -1,24 +1,27 @@
-const textureImages = [
-    {
-        itemImageSrc: '/img/textures/golden_apple.png',
-        thumbnailImageSrc: '/img/textures/golden_apple.png',
-    },
-    {
-        itemImageSrc: '/img/textures/bread.png',
-        thumbnailImageSrc: '/img/textures/bread.png',
-    },
-    {
-        itemImageSrc: '/img/textures/ender_eye.png',
-        thumbnailImageSrc: '/img/textures/ender_eye.png',
-    },
-    {
-        itemImageSrc: '/img/textures/apple.png',
-        thumbnailImageSrc: '/img/textures/apple.png',
-    },
-    {
-        itemImageSrc: '/img/textures/iron_sword.png',
-        thumbnailImageSrc: '/img/textures/iron_sword.png',
-    },
+// Insert names of the textures from /img/textures
+const imageName = [
+    'golden_apple',
+    'apple',
+    'amethyst_shard',
+    'bread',
+    'cooked_porkchop',
+    'ender_eye',
+    'gold_ingot',
+    'iron_ingot',
+    'iron_sword',
+    'netherite_sword',
+    'emerald_block',
+    'stone_bricks',
+    'redstone_lamp_on',
 ]
+
+let textureImages = []
+
+imageName.forEach(element => {
+    textureImages.push({
+        itemImageSrc: `/img/textures/${element}.png`,
+        thumbnailImageSrc: `/img/textures/${element}.png`,
+    })
+});
 
 export default textureImages
