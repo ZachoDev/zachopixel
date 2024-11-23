@@ -125,9 +125,9 @@ onMounted(() => {
                             <h2>Top Kofi's supporter</h2>
                         </template>
                         <template #content>
-                            <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
-                            <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
-                            <div class="items-left mb-5"><span class="pi pi-user mr-5"/> Person</div>
+                            <div class="items-left mb-5"><p class="pi pi-user mr-5"/> Person 1</div>
+                            <div class="items-left mb-5"><p class="pi pi-user mr-5"/> Person 2</div>
+                            <div class="items-left mb-5"><p class="pi pi-user mr-5"/> Person 3</div>
                         </template>
                     </Card>
                 </BorderDetail>
