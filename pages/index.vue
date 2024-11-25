@@ -145,7 +145,7 @@ onMounted(() => {
         <hr class="mt-16 mb-16">
 
         <!-- KOFI -->
-        <div class="grid grid-cols-12 items-center mb-10"> 
+        <div class="grid grid-cols-12 items-center mb-10 text-center"> 
 
             <div class="col-span-12 md:col-span-6">
                 <div>

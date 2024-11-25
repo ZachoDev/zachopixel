@@ -1,10 +1,10 @@
 // Insert names of the textures from /img/textures
 const imageName = [
     'golden_apple',
-    'apple',
     'amethyst_shard',
     'bread',
     'cooked_porkchop',
+    'apple',
     'ender_eye',
     'gold_ingot',
     'iron_ingot',
