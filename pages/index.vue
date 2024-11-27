@@ -95,7 +95,7 @@ onMounted(() => {
                                     :changeItemOnIndicatorHover="true"
                                 >
                                     <template #item="slotProps">
-                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" class="h-[340px]" />
+                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" class="h-[180px] md:h-[340px]" />
                                     </template>
                                 </Galleria>
                             </template>

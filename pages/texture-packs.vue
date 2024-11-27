@@ -1,4 +1,6 @@
 <script setup>
+import { Image } from 'primevue';
+
 const theming = {
     colorScheme: {
             light: {
@@ -57,7 +59,7 @@ const theming = {
                             <div class="grid grid-cols-12">
 
                                 <div class="col-span-12 md:col-span-4">
-                                    <img class="h-[200px] mx-auto" src="/img/thalyrus2-logo.png" alt="thalyrus2-logo" ">
+                                    <Image class="h-[200px] mx-auto" src="/img/thalyrus2-logo.png" alt="thalyrus2-logo"></Image>
                                 </div>
                                 <div class="col-span-12 md:col-span-8">
                                     <h1>Thalyrus Medieval Warfare</h1>
@@ -76,7 +78,7 @@ const theming = {
                                     <p>Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. </p>
                                 </div>
                                 <div class="col-span-12 md:col-span-4">
-                                    <img class="h-[200px] mx-auto" src="/img/textures/iron_sword.png" alt="thalyrus2-logo" ">
+                                    <Image class="h-[200px] mx-auto" src="/img/textures/iron_sword.png" alt="thalyrus2-logo"></Image>
                                 </div>
                                 
                             </div>
@@ -87,7 +89,7 @@ const theming = {
                             <div class="grid grid-cols-12">
                                 
                                 <div class="col-span-12 md:col-span-4">
-                                    <img class="h-[200px] mx-auto" src="/img/thalyrus2-logo.png" alt="thalyrus2-logo" ">
+                                    <Image class="h-[200px] mx-auto" src="/img/thalyrus2-logo.png" alt="thalyrus2-logo"></Image>
                                 </div>
                                 <div class="col-span-12 md:col-span-8">
                                     <h1>Thalyrus Medieval Warfare</h1>
@@ -98,6 +100,7 @@ const theming = {
 
                         </div>
 
+                        <!-- ABOUT -->
                         <div class="col-span-12 md:col-span-4 bg-zinc-800 p-5">
                             <h3>About</h3>
                             <p>Version: 0.6 Alpha</p>
