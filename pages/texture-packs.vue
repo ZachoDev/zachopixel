@@ -43,23 +43,28 @@ const theming = {
 
     <app-body>
         <Tabs value="0" :dt="theming" >
+
             <TabList class="mb-10">
                 <Tab value="0">Description</Tab>
                 <Tab value="1">Gallery</Tab>
                 <Tab value="2">Wiki</Tab>
             </TabList>
-            <TabPanels>
+            
+            <TabPanels  >
 
                 <!-- DESCRIPTION -->
                 <TabPanel value="0" >
-                    <div class="grid grid-cols-12 gap-10">
-                        <div class="col-span-12 md:col-span-8 items-center text-center md:text-left">
+                    
+                    <div class="grid grid-cols-12 gap-5">
+
+                        <!-- LEFT -->
+                        <div class="col-span-12 sm:col-span-8 items-center text-center md:text-left">
 
                             <!-- Pack -->
-                            <div class="grid grid-cols-12">
+                            <div class="grid grid-cols-12 gap-1">
 
                                 <div class="col-span-12 md:col-span-4">
-                                    <Image class="h-[200px] mx-auto" src="/img/thalyrus2-logo.png" alt="thalyrus2-logo"></Image>
+                                    <img class="mx-auto w-48" src="/img/thalyrus2-logo.png" alt="thalyrus2-logo">
                                 </div>
                                 <div class="col-span-12 md:col-span-8">
                                     <h1>Thalyrus Medieval Warfare</h1>
@@ -78,7 +83,7 @@ const theming = {
                                     <p>Hechos con pasion por el pixel art, mi texturas estan diseñadas en una resolucion 32x32 para ofrecer un nivel agradable de detalles sin olvidar los pixeles. </p>
                                 </div>
                                 <div class="col-span-12 md:col-span-4">
-                                    <Image class="h-[200px] mx-auto" src="/img/textures/iron_sword.png" alt="thalyrus2-logo"></Image>
+                                    <img class="mx-auto w-48" src="/img/textures/iron_sword.png" alt="iron_sword">
                                 </div>
                                 
                             </div>
@@ -100,15 +105,56 @@ const theming = {
 
                         </div>
 
-                        <!-- ABOUT -->
-                        <div class="col-span-12 md:col-span-4 bg-zinc-800 p-5">
-                            <h3>About</h3>
-                            <p>Version: 0.6 Alpha</p>
-                            <p>Created: 11/01/18</p>
-                            <p>Updated: Jul 01, 2024</p>
-                            <p>Author: Zacho</p>
-                            <hr class="mx-5">
-                            <h3>Downloads</h3>
+                        <!-- RIGHT -->
+                        <div class="col-span-12 md:col-span-4">
+                            <Card>
+                                <template #content>
+                                    <div>
+                                        <h3>About</h3>
+                                        <p>Version: 0.6 Alpha</p>
+                                        <p>Created: 11/01/18</p>
+                                        <p>Updated: Jul 01, 2024</p>
+                                        <p>Author: Zacho</p>
+                                        <hr class="mx-5">
+                                        
+                                        <h3>Downloads</h3>
+                                        <div class="group flex items-center justify-between mb-5">
+                                            <div class="ltr:ml-3 rtl:mr-3">
+                                                <span class="font-bold text-xl">Thalyrus II</span><br>for MC 1.20.1
+                                            </div>
+                                            <Button>
+                                                <i class="pi pi-download" style="font-size: 2rem"></i>
+                                            </Button>
+                                        </div>
+                                        <div class="group flex items-center justify-between mb-5">
+                                            <div class="ltr:ml-3 rtl:mr-3">
+                                                <span class="font-bold text-xl">Thalyrus II</span><br>for MC 1.20
+                                            </div>
+                                            <Button>
+                                                <i class="pi pi-download" style="font-size: 2rem"></i>
+                                            </Button>
+                                        </div>
+                                        <div class="group flex items-center justify-between mb-5">
+                                            <div class="ltr:ml-3 rtl:mr-3">
+                                                <span class="font-bold text-xl">Thalyrus II</span><br>for MC 1.19
+                                            </div>
+                                            <Button>
+                                                <i class="pi pi-download" style="font-size: 2rem"></i>
+                                            </Button>
+                                        </div>
+
+                                        <p class="text-red-500">Not available for bedrock edition</p>
+
+                                        <Button class="w-[100%]">
+                                            <p class="!mb-0 !text-white">Check pack Wiki</p>
+                                        </Button>
+                                    </div>
+                                </template>
+                            </Card>
+                        </div>
+
+                        <div>
+                            
                         </div>
 
                     </div>
